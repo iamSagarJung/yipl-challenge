@@ -1,0 +1,20 @@
+@mixin flexbox($justify:center,$direction:row){
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+    flex-direction: $direction;
+}
+@mixin buttonStyle(){
+    background-color: #3f51b5;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+@mixin buttonHover(){
+        background-color: #303f9f;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+}

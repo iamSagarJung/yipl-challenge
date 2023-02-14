@@ -1,0 +1,75 @@
+@import "../../sass/variables";
+@import "../../sass/mixin";
+
+.navbar {
+  @include flexbox(space-around);
+  margin: 2rem 0;
+  .navbar-brand {
+    font-size: 2.6rem;
+    font-weight: bold;
+    span {
+      display: inline-block;
+      background: $blue-clr-2;
+      border-radius: 50%;
+      width: 3.5rem;
+      height: 3.5rem;
+      text-align: center;
+      margin-right: 1rem;
+      color: $white-clr;
+    }
+  }
+  .nav-items {
+    @include flexbox();
+    li {
+      margin: 0 1rem;
+      font-size: 1.8rem;
+      color: $grey-clr;
+      &:hover {
+        font-weight: bold;
+        color: $black-clr-2;
+        cursor: pointer;
+      }
+    }
+  }
+  .hamburger-menu {
+    display: none;
+    font-size: 3.5rem;
+    z-index: 1;
+    margin-left: 1rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .navbar {
+    justify-content: space-between;
+    .navbar-brand {
+      margin-right: 10%;
+      order: 2;
+    }
+    .nav-items {
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      position: absolute;
+      top: 0.1%;
+      width: 30%;
+      height: 100%;
+      background-color: $white-clr;
+      padding: 7rem 0.5rem;
+      transform: translate(-150%);
+      transition: transform 0.5s ease-in-out;
+      li {
+        font-size: 2rem;
+        text-align: left;
+        margin-bottom: 5rem;
+      }
+    }
+    .hamburger-menu {
+      display: block;
+    }
+    .show-menu {
+      transform: translate(0);
+      transition: transform 0.5s ease-in-out;
+    }
+  }
+}
