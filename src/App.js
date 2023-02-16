@@ -1,14 +1,16 @@
 import React,{Fragment} from 'react'
 import './App.scss'
-import Navbar from './components/header/Navbar'
-import Home from './components/pages/Home'
-import Services from './components/pages/Services'
+import {Apps, Home,Navbar, Services} from './components'
 
 
 const App = () => {
   return <Fragment>
     <Navbar/>
-    {/* <Home/> */}
+    <div className='container'>
+    <Home/>
+    <Services/>
+    <Apps/>
+    </div>
   </Fragment>
 }
 

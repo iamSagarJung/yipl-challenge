@@ -1,0 +1,34 @@
+@import "../../sass/mixin";
+@import "../../sass/variables";
+.service-container {
+  margin: 5rem 0;
+  header {
+    text-align: center;
+    align-items: left;
+    .service-title {
+      @include title();
+    }
+  }
+
+  .service-card-container {
+    @include flexbox(center);
+    flex-wrap: wrap;
+    .service-card {
+      margin: 1rem;
+      width: 35rem;
+      background-color: $white-clr;
+      padding: 2rem;
+      border-radius: 15px;
+      .icon {
+        font-size: 8rem;
+        color: $blue-clr-2;
+      }
+      .card-title {
+        @include title(2.4rem);
+      }
+      .primary-text {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

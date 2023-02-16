@@ -1,0 +1,7 @@
+export {default as Navbar} from "./header/Navbar"
+export {default as Home} from "./pages/Home"
+export {default as About} from "./pages/About"
+export {default as Apps} from "./pages/Apps"
+export {default as Services} from "./pages/Services"
+export {default as Testimonials} from "./pages/Testimonials"
+export {default as Contact} from "./pages/Contact"

@@ -1,0 +1,6 @@
+@import "../../sass/variables";
+@import "../../sass/mixin";
+
+.home-btn{
+  @include buttonStyle($background:$blue-clr-1,$color:$white-clr,$border:none)
+}

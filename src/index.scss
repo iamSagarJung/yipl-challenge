@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import "./sass/mixin";
+@import "./sass/variables";
+
+*,
+::after,
+::before{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  font-family: 'Mulish', sans-serif;
+  background-color: #f5f5f5;
+}
+
+html{
+  font-size: 62.5%;
+}
+button:hover{
+  cursor: pointer;
+}
+
+.container{
+  max-width: 80%;
+  margin:0 auto;
+}
+
+// #global meadia query 
+@media (max-width: 728px){
+  html{
+    font-size: 50%;
+    
+  }
+  .container{
+    max-width: 90%;
+  }
+}
+@media (min-width:728px) and (max-width: 1028px){
+  html{
+    font-size: 55%;
+  }
+  .container{
+    max-width: 90%;
+  }
+}
+
+/* #global css */
+.primary-text{
+  font-weight: 300;
+  font-size: 2.1rem;
+  line-height: 3.2rem;
+  color:#7D7987;
+  padding-bottom:2rem;
+}
+.title-border{
+  width: 5.6rem;
+  margin: 2rem auto;
+  height: 2px;
+  background-color: $black-clr;
+}
+
+// image-container global css
+.homepage-container, .apps-container-one,.apps-container-two {
+  width: 100%;
+  margin: 6rem 0;
+  .image-container {
+    @include flexbox(space-between);
+    .text-content {
+      width: 38%;
+      .image-title {
+        @include title(4.8rem);
+        padding: 3rem 0;
+      }
+      .primary-btn {
+        @include buttonStyle();
+      }
+    }
+    img {
+      width: 60%;
+    }
+  }
+}
+
+@media (max-width: 821px) {
+  .homepage-container .image-container, 
+  .apps-container-two .image-container, 
+  .apps-container-one .image-container {
+    flex-direction: column;
+    text-align: center;
+    .text-content {
+      width: 100%;
+      order: 2;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
