@@ -4,6 +4,16 @@
     align-items: center;
     flex-direction: $direction;
 }
+@mixin logo(){
+    display: inline-block;
+    background: $blue-clr-2;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    text-align: center;
+    margin-right: 1rem;
+    color: $white-clr;
+}
 @mixin buttonStyle($background:$white-clr-2,$color:$blue-clr-2,$border:2px solid $blue-clr-2){
     background-color:$background ;
     border: $border;
@@ -24,10 +34,16 @@
         transform: translate(1px, 1px);
     }
 }
-@mixin title($font-size:3.6rem){
-    color:$black-clr;
+@mixin title($font-size:3.6rem,$color:$black-clr){
+    color:$color;
     line-height: 5rem;
     font-size: $font-size;
     font-weight: 700;
 }
-
+@mixin backgroundStyle{
+    position: absolute;
+    width:50%;
+    overflow: hidden;
+    height:100%;
+    z-index: -1;
+}

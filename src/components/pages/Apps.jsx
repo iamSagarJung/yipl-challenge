@@ -1,9 +1,11 @@
 import React from "react";
 import "./Apps.scss";
+import {BsArrowDown} from "react-icons/bs";
+
 
 const Apps = () => {
   return (
-    <div className="apps-container">
+    <div className="apps-container" id="apps">
       <div className="apps-container-one">
         <figure className="image-container">
           <img src="apps1.png" alt="homepage Image" />
@@ -24,12 +26,13 @@ const Apps = () => {
         <figure className="image-container">
           <figcaption className="text-content">
             <h2 className="image-title">Download our mobile apps</h2>
+        <div className="title-border"/>
             <p className="primary-text">
               Our dedicated patient engagement app and web portal allow you to
               access information instantaneously (no tedeous form, long calls,
               or administrative hassle) and securely
             </p>
-            <button className="primary-btn">Learn more</button>
+            <button className="primary-btn">Download <BsArrowDown style={{fontSize:"2rem"}}/> </button>
           </figcaption>
           <img src="apps1.png" alt="homepage Image" />
         </figure>

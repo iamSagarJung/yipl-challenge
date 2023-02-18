@@ -1,0 +1,41 @@
+@import "../../sass/mixin";
+@import "../../sass/variables";
+.form-container{
+    max-width: 80%;
+    margin:10rem auto;
+    header{
+        text-align: center;
+        h1{
+            @include title()
+        }
+    }
+    input,textarea{
+        width: 100%;
+        padding:.8rem;
+        border-radius: 5px;
+        color:$grey-clr;
+        border:1px solid $grey-clr;
+        margin-bottom:2rem;
+    }
+    label{
+        font-size: 1.6rem;
+        font-weight: 300;
+        padding:22rem 0;
+    }
+    textarea{
+        height: 20rem;
+    }
+    .form-row{
+        @include flexbox(space-between);
+        .row-one,.row-two{
+            width:45%;
+        }
+    }
+    .btn{
+        text-align: center;
+        button{
+            @include buttonStyle();
+        }
+    }
+  
+}

@@ -1,7 +1,14 @@
 @import "../../sass/mixin";
 @import "../../sass/variables";
 .service-container {
-  margin: 5rem 0;
+  margin: 10rem 0;
+  position: relative;
+
+  .background-design{
+   @include backgroundStyle();
+    top:20%;
+    left:-11%;
+  }
   header {
     text-align: center;
     align-items: left;
@@ -11,6 +18,9 @@
   }
 
   .service-card-container {
+    @include flexbox(center);
+    flex-wrap: wrap;
+  
     @include flexbox(center);
     flex-wrap: wrap;
     .service-card {
@@ -31,4 +41,5 @@
       }
     }
   }
+ 
 }

@@ -24,10 +24,7 @@ button:hover{
   cursor: pointer;
 }
 
-.container{
-  max-width: 80%;
-  margin:0 auto;
-}
+
 
 // #global meadia query 
 @media (max-width: 728px){
@@ -35,16 +32,10 @@ button:hover{
     font-size: 50%;
     
   }
-  .container{
-    max-width: 90%;
-  }
 }
 @media (min-width:728px) and (max-width: 1028px){
   html{
     font-size: 55%;
-  }
-  .container{
-    max-width: 90%;
   }
 }
 
@@ -71,6 +62,9 @@ button:hover{
     @include flexbox(space-between);
     .text-content {
       width: 38%;
+      .title-border{
+        margin:0 0 1.5rem 0;
+      }
       .image-title {
         @include title(4.8rem);
         padding: 3rem 0;
@@ -94,6 +88,9 @@ button:hover{
     .text-content {
       width: 100%;
       order: 2;
+      .title-border{
+        margin:auto;
+      }
     }
     img {
       width: 100%;

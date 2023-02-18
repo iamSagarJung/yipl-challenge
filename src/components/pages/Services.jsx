@@ -1,12 +1,11 @@
 import React from "react";
 import "./Services.scss";
-import { featuredData } from "../Data";
+import { featuredData } from "../../Data";
 
 const Services = () => {
   return (
-    <div className="service-container">
-      {/* <div className='background-design'/> */}
-      {/* <div className='wrapper'> */}
+    <div className="service-container" id="services">
+      <div className='wrapper'>
       <header>
         <h3 className="service-title">Our Services</h3>
         <div className="title-border"/>
@@ -17,6 +16,9 @@ const Services = () => {
           your health
         </p>
       </header>
+      <div className='background-design'>
+        <img src="Vector.png" alt="vector"/>
+      </div>
       <section className="service-card-container">
         {featuredData.map((item) => {
           return (
@@ -28,6 +30,7 @@ const Services = () => {
           );
         })}
       </section>
+      </div>
     </div>
   );
 };
