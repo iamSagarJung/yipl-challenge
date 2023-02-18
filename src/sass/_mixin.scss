@@ -47,3 +47,16 @@
     height:100%;
     z-index: -1;
 }
+@mixin dot-grid{
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 8rem;
+    .dot {
+      width: 10px;
+      height: 10px;
+      background-color: #97c3f942;
+      border-radius: 50%;
+    }
+  }

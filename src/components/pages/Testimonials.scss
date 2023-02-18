@@ -5,10 +5,20 @@
   background: $blue-gradient;
   padding: 7rem 7rem 2rem 7rem;
   border-radius: 24px;
-  margin: 10rem;
+  // margin: 10rem;
+  max-width: 80%;
+  margin: 5rem auto;
   position: relative;
   height: 50rem;
   overflow: hidden;
+  .dot-grid{
+    @include dot-grid;
+    top:1%;
+    right: 1%;
+    .dot{
+      background-color: #ffffff71;
+    }
+  }
   header {
     text-align: center;
     h2{
@@ -27,7 +37,6 @@
       transition: all 0.3s linear; 
       padding:5rem;   
       overflow: hidden;
-      // background-color: red;
     @include flexbox(space-between);
     margin: 7.5rem 0;
     .left-content {
@@ -98,6 +107,14 @@
   width:1.6rem;
   transition: .5s all ease-in;
 }
+}
+
+.bottom-dots{
+  .dot-grid{
+    @include dot-grid;
+    left:6%;
+    bottom:25%;
+  }
 }
 
 @media (max-width:860px){

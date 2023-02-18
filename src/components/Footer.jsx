@@ -1,6 +1,8 @@
 import React from "react";
 import "./Footer.scss";
 import { HiChevronDoubleUp } from "react-icons/hi"
+import Dots from "./Dots";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   const scrollToTop=()=>{
@@ -11,7 +13,8 @@ const Footer = () => {
     <footer className="footer-container">
       <div className="move-to-top" onClick={scrollToTop}>
         <HiChevronDoubleUp style={{fontSize:"4rem"}}/>
-        <p>Scroll to to Top</p>
+        <p>Scroll to  Top</p>
+      <Dots/>
       </div>
       <section className="first-row">
         <div className="logo">
@@ -31,10 +34,13 @@ const Footer = () => {
       <section className="second-row">
       <h2 className="footer-title">Company</h2>
         <ul>
-            <li>About</li>
-            <li>Testimonials</li>
-            <li>Find a doctor</li>
-            <li>Apps</li>
+            <li><Link to="about" smooth={true} duration={500}>About</Link></li>
+            <li><Link to="testimonials" smooth={true} duration={500}>Testimonials</Link></li>
+            <li><Link to="services" smooth={true} duration={500}>Find a doctor</Link></li>
+            <li><Link to="apps" smooth={true} duration={500}>Apps</Link></li>
+            <li></li>
+            <li></li>
+            <li></li>
         </ul>
       </section>
 
@@ -58,6 +64,30 @@ const Footer = () => {
             <li>How it works</li>
         </ul>
       </section>
+      <div className="footer-dots">
+      <div className="dot-grid">
+  <div className="dot"/>
+  <div className="dot"/>
+  <div className="dot"/>
+  <div className="dot"/>
+  <div className="dot"/>
+  <div className="dot"/>
+  <div className="dot"/>
+  <div className="dot"/>
+  <div className="dot"/>
+  <div className="dot"/>
+  <div className="dot"/>
+  <div className="dot"/>
+  <div className="dot"/>
+  <div className="dot"/>
+  <div className="dot"/>
+  <div className="dot"/>
+  <div className="dot"/>
+  <div className="dot"/>
+  <div className="dot"/>
+  <div className="dot"/>
+</div>
+      </div>
     </footer>
   );
 };

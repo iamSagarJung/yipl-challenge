@@ -1,8 +1,10 @@
 import React from "react";
 import "./Home.scss";
+import Dots from "../Dots";
 const Home = () => {
   return (
     <div className="homepage-container" id="home">
+      <Dots/>
       <figure className="image-container">
       <figcaption className="text-content">
           <h2 className="image-title">Virtual healthcare for you</h2>

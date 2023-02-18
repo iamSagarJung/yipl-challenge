@@ -3,6 +3,7 @@ import { aboutData } from "../../Data";
 import "./About.scss";
 import { BsArrowRight } from "react-icons/bs";
 
+
 const About = () => {
   const [showIndex, setShowIndex] = useState(null);
 
@@ -18,6 +19,33 @@ const About = () => {
 
   return (
     <section id="about" style={{position:"relative",overflow:"hidden"}}>
+     <div className="dot-square-grid">
+    <div className="dot"/>
+    <div className="dot"/>
+    <div className="dot"/>
+    <div className="dot"/>
+    <div className="dot"/>
+    <div className="dot"/>
+    <div className="dot"/>
+    <div className="dot"/>
+    <div className="dot"/>
+    <div className="dot"/>
+    <div className="dot"/>
+    <div className="dot"/>
+    <div className="dot"/>
+    <div className="dot"/>
+    <div className="dot"/>
+    <div className="dot"/>
+    <div className="dot"/>
+    <div className="dot"/>
+    <div className="dot"/>
+    <div className="dot"/>
+    <div className="dot"/>
+    <div className="dot"/>
+    <div className="dot"/>
+    <div className="dot"/>
+    <div className="dot"/>
+  </div>
       <header>
         <h2 className="about-title">Check out our latest article</h2>
         <div className="title-border" />
@@ -26,7 +54,7 @@ const About = () => {
       <div className="background-image">
         <img src="vector2.png"/>
       </div>
-     
+    
       <div className="about-container">
         {aboutData.map(({ id, image, title, description },index) => {
           const shortDescription = description.slice(0, 90) + "....";
@@ -53,6 +81,7 @@ const About = () => {
             </div>
           );
         })}
+         
       </div>
       <div className="about-btn">
         <button>View all</button>

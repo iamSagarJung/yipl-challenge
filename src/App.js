@@ -6,7 +6,7 @@ import {Apps, Contact, Home,Navbar, Services, Testimonials,Footer, About} from '
 const App = () => {
   return <Fragment>
     <Navbar/>
-    <div style={{maxWidth:"90%",margin:"auto"}}>
+    <div className='container'>
     <Home/>
     <Services/>
     <Apps/>

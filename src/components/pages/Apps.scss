@@ -1,5 +1,10 @@
-
+@import "../../sass/mixin";
 
 .apps-container{
     margin:10rem 0;
+    position: relative;
+    .dot-grid{
+        @include dot-grid();
+        right:-10%;
+    }
 }

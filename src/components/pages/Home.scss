@@ -4,3 +4,12 @@
 .home-btn{
   @include buttonStyle($background:$blue-clr-1,$color:$white-clr,$border:none)
 }
+
+.homepage-container{
+  .dot-grid{
+    @include dot-grid();
+    top:10%;
+    left:1%;
+  }
+  
+}

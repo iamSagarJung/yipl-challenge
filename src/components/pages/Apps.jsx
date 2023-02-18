@@ -1,11 +1,12 @@
 import React from "react";
 import "./Apps.scss";
 import {BsArrowDown} from "react-icons/bs";
+import Dots from "../Dots";
 
 
 const Apps = () => {
   return (
-    <div className="apps-container" id="apps">
+    <div className="apps-container">
       <div className="apps-container-one">
         <figure className="image-container">
           <img src="apps1.png" alt="homepage Image" />
@@ -22,7 +23,9 @@ const Apps = () => {
         </figure>
       </div>
 
-      <div className="apps-container-two">
+      <Dots/>
+
+      <div className="apps-container-two"  id="apps">
         <figure className="image-container">
           <figcaption className="text-content">
             <h2 className="image-title">Download our mobile apps</h2>
