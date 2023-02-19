@@ -38,9 +38,6 @@ const Footer = () => {
             <li><Link to="testimonials" smooth={true} duration={500}>Testimonials</Link></li>
             <li><Link to="services" smooth={true} duration={500}>Find a doctor</Link></li>
             <li><Link to="apps" smooth={true} duration={500}>Apps</Link></li>
-            <li></li>
-            <li></li>
-            <li></li>
         </ul>
       </section>
 

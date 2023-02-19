@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { aboutData } from "../../Data";
 import "./About.scss";
 import { BsArrowRight } from "react-icons/bs";
+import DotSquare from "../DotSquare";
 
 
 const About = () => {
@@ -19,33 +20,7 @@ const About = () => {
 
   return (
     <section id="about" style={{position:"relative",overflow:"hidden"}}>
-     <div className="dot-square-grid">
-    <div className="dot"/>
-    <div className="dot"/>
-    <div className="dot"/>
-    <div className="dot"/>
-    <div className="dot"/>
-    <div className="dot"/>
-    <div className="dot"/>
-    <div className="dot"/>
-    <div className="dot"/>
-    <div className="dot"/>
-    <div className="dot"/>
-    <div className="dot"/>
-    <div className="dot"/>
-    <div className="dot"/>
-    <div className="dot"/>
-    <div className="dot"/>
-    <div className="dot"/>
-    <div className="dot"/>
-    <div className="dot"/>
-    <div className="dot"/>
-    <div className="dot"/>
-    <div className="dot"/>
-    <div className="dot"/>
-    <div className="dot"/>
-    <div className="dot"/>
-  </div>
+      <DotSquare/>
       <header>
         <h2 className="about-title">Check out our latest article</h2>
         <div className="title-border" />

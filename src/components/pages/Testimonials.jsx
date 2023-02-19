@@ -14,14 +14,12 @@ const Testimonials = () => {
     } else if (index > TestimonialsData.length - 1) {
       setIndex(0);
     }
-  }, [index]);
-
-  useEffect(() => {
     let slider = setTimeout(() => {
       setIndex(index + 1);
     }, 5000);
     return () => clearInterval(slider);
   }, [index]);
+
 
   return (
     <div style={{position:"relative"}}>
@@ -67,9 +65,8 @@ const Testimonials = () => {
         )}
       </div>
       <div className="slider-icons">
-        <div>
+        <div className="prev-icon">
           <BsArrowLeft
-            style={{ color: "#5b9af385" }}
             onClick={() => setIndex(index - 1)}
           />
         </div>
@@ -84,11 +81,10 @@ const Testimonials = () => {
             );
           })}
         </div>
-        <div>
+        <div className="next-icon">
           <BsArrowRight onClick={() => setIndex(index + 1)} />
         </div>
       </div>
-  
     </div>
   );
 };

@@ -2,7 +2,6 @@
 @import ".././sass/mixin";
 
 .footer-container {
-  // height: 55rem;
   background: $blue-gradient;
   @include flexbox(space-between);
   flex-wrap: wrap;
@@ -73,7 +72,7 @@
       @include dot-grid;
       grid-template-columns: repeat(5,1fr);
       left:1%;
-      bottom:1%;
+      bottom:0%;
   .dot{
     background-color:#ffffff71;
   }
@@ -83,9 +82,6 @@
 
 @media (max-width:800px){
 .footer-container {
-  .move-to-top{
-    // top:-7%;
-  }
 .first-row{
     width:100%;
 }

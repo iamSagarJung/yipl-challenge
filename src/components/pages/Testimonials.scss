@@ -5,7 +5,6 @@
   background: $blue-gradient;
   padding: 7rem 7rem 2rem 7rem;
   border-radius: 24px;
-  // margin: 10rem;
   max-width: 80%;
   margin: 5rem auto;
   position: relative;
@@ -84,6 +83,17 @@
   @include flexbox(space-around);
   font-size: 3.5rem;
   color: $blue-clr-2;
+  .prev-icon{
+    color:#5b9af385;
+    &:hover{
+      color:$blue-clr-2
+    }
+}
+.next-icon{
+  &:hover{
+    color:#5b9af385;
+  }
+}
 }
 
 .navigation-btns{
@@ -122,7 +132,6 @@
     height: 80rem;
     padding:7rem 3rem;
    article{
-    // top:10%;
       text-align: center;
       @include flexbox($direction:column);
       figure{

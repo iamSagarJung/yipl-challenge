@@ -9,15 +9,6 @@ header {
   }
 }
 
-#about .dot-square-grid{
-  @include dot-grid();
-  z-index: 9999;
-  top:20%;
-  left:12%;
-  z-index: -2;
-    grid-template-columns: repeat(5, 1fr);
-
-}
 
 .background-image{
     @include backgroundStyle;

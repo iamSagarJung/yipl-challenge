@@ -1,0 +1,7 @@
+@import "../sass/mixin";
+.dot-square-grid{
+    @include dot-grid();
+    top:20%;
+    left:12%;
+      grid-template-columns: repeat(5, 1fr);
+}
