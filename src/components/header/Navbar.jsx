@@ -51,7 +51,7 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="hamburger-menu" onClick={toggleMenu}>
-        {isOpen ? <GrClose /> : <GrMenu />}
+        {isOpen ? <GrClose/> : <GrMenu />}
       </div>
     </nav>
   );
