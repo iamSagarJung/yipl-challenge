@@ -9,7 +9,6 @@ const About = () => {
   const [showIndex, setShowIndex] = useState(null);
 
   const toggleShow = (index) => {
-    console.log(index)
     if(showIndex===index){
       setShowIndex(null)
     }else{
@@ -27,7 +26,7 @@ const About = () => {
       </header>
 
       <div className="background-image">
-        <img src="vector2.png"/>
+        <img src="vector2.png" alt="vector"/>
       </div>
     
       <div className="about-container">

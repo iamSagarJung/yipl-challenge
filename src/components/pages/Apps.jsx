@@ -9,7 +9,7 @@ const Apps = () => {
     <div className="apps-container">
       <div className="apps-container-one">
         <figure className="image-container">
-          <img src="apps1.png" alt="homepage Image" />
+          <img src="apps1.png" alt="apps" />
           <figcaption className="text-content">
             <h2 className="image-title">Leading healthcare providers</h2>
         <div className="title-border"/>
@@ -37,7 +37,7 @@ const Apps = () => {
             </p>
             <button className="primary-btn">Download <BsArrowDown style={{fontSize:"2rem"}}/> </button>
           </figcaption>
-          <img src="apps1.png" alt="homepage Image" />
+          <img src="apps1.png" alt="apps" />
         </figure>
       </div>
     </div>

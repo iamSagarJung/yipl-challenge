@@ -14,7 +14,7 @@ const Home = () => {
           </p>
           <button className="home-btn">Consult today</button>
         </figcaption>
-        <img src="home.png" alt="homepage Image" />
+        <img src="home.png" alt="homepage" />
       </figure>
     </div>
   );
